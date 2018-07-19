@@ -42,7 +42,11 @@ h5.title-bg button {
 }
 
 /***** Links *****/
-a, a:hover { color:#d8450b; }
+a {
+	color: #f2ad63;
+}
+
+a:hover { color:#0d4fce; }
 
 /***** Misc *****/
 i {margin-right: 3px;}
@@ -708,7 +712,8 @@ a.accordion-toggle{background: #f5f5f5;}
 
 #clientCarousel.carousel .item {
 	background: #f9f9f9;
-	padding:20px 0px;
+	align-items: center;
+	padding:0px 0px;
     -webkit-transition: opacity 1s ease-in-out;
 	-moz-transition: opacity 1s ease-in-out;
 	-o-transition: opacity 1s ease-in-out;
@@ -723,6 +728,11 @@ a.accordion-toggle{background: #f5f5f5;}
     opacity: 0;
     z-index: 2;
   }
+
+/***** Playlist *****/
+.playlist {
+	align-items: center;
+}
 
 /***** Client Logos *****/
 .client-link {
@@ -739,7 +749,7 @@ a.accordion-toggle{background: #f5f5f5;}
 	background: url(../img/rnd-client-mask.png);
 }
 .client-logos {margin: 20px 0px 0px 0px;}
-.client-logos li {list-style: none; float: left; margin: 0px 7px;}
+.client-logos li {list-style: none; float: right; margin: 0px 7px;}
 
 /* Small Monitor */
 @media (min-width: 980px) and (max-width: 1199px) {
