@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="css/style-ie.css"/>
 <![endif]-->
 
+<!-- Font Awesome
+================================================== -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <!-- Favicons
 ================================================== -->
 <link rel="shortcut icon" href="img/favicon.ico">
@@ -79,7 +83,7 @@ $(document).ready(function () {
         <!-- Logo
         ================================================== -->
         <div class="span5 logo">
-        	<a href="index.htm"><img src="img/DahiLogo.png" alt="" /></a>
+        	<a href="index.htm"><img src="img/DahiLogo.png" alt="DJ Dahi" id="top" /></a>
             <!-- <h5>Big Things... Small Packages</h5> -->
         </div>
 
@@ -89,39 +93,20 @@ $(document).ready(function () {
             <div class="navbar hidden-phone">
 
             <ul class="nav">
-            <li class="dropdown active">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="index.htm">Home <b></b></a>
+              <li><a href="#top">Home</a></li>
+              <li><a href="#spotlight">Spotlight</a></li>
+              <li><a href="#onRepeat">On Repeat</a></li>
+              <li><a href="#pressedRecords">Pressed Records</a></li>
+              <li><a href="#posts">Posts</a></li>
+              <li>
+                <a class="nav-social-media-button" id="instagram-follow-button"
+                href="https://www.instagram.com/djdahi/" target="_blank">
+              <i class="fa fa-instagram social-media-icon-nav" aria-hidden="true"></i></a>
             </li>
-           <li><a href="features.htm">Features</a></li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="page-full-width.htm">Pages <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="page-full-width.htm">Full Width</a></li>
-                    <li><a href="page-right-sidebar.htm">Right Sidebar</a></li>
-                    <li><a href="page-left-sidebar.htm">Left Sidebar</a></li>
-                    <li><a href="page-double-sidebar.htm">Double Sidebar</a></li>
-                </ul>
-            </li>
-             <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="gallery-4col.htm">Gallery <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="gallery-3col.htm">Gallery 3 Column</a></li>
-                    <li><a href="gallery-4col.htm">Gallery 4 Column</a></li>
-                    <li><a href="gallery-6col.htm">Gallery 6 Column</a></li>
-                    <li><a href="gallery-4col-circle.htm">Gallery 4 Round</a></li>
-                    <li><a href="gallery-single.htm">Gallery Single</a></li>
-                </ul>
-             </li>
-             <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="blog-style1.htm">Blog <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="blog-style1.htm">Blog Style 1</a></li>
-                    <li><a href="blog-style2.htm">Blog Style 2</a></li>
-                    <li><a href="blog-style3.htm">Blog Style 3</a></li>
-                    <li><a href="blog-style4.htm">Blog Style 4</a></li>
-                    <li><a href="blog-single.htm">Blog Single</a></li>
-                </ul>
-             </li>
+              <li>
+                <a class="nav-social-media-button" id="twitter-follow-button"
+                href="https://twitter.com/DjDahi" target="_blank" target="_blank"><i class="fa fa-twitter social-media-icon-nav"aria-hidden="true"></i></a>
+              </li>
             </ul>
 
             </div>
@@ -132,10 +117,10 @@ $(document).ready(function () {
                 <div class="mobile-nav-select">
                 <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
                     <option value="">Navigate...</option>
-                    <option value="index.htm">Home</option>
-                    <option value="features.htm">Features</option>
-                    <option value="gallery-4col.htm">Gallery</option>
-                    <option value="blog-style1.htm">Blog</option>
+                    <option value="#spotlight">Spotlight</option>
+                    <option value="#onRepeat">On Repeat</option>
+                    <option value="#pressedRecords">Pressed Records</option>
+                    <option value="#posts">Posts</option>
                 </select>
                 </div>
                 </form>
@@ -150,7 +135,7 @@ $(document).ready(function () {
           ================================================== -->
       	<div class="span6">
 
-              <h5 class="title-bg">SPOTLIGHT
+              <h5 class="title-bg" id="spotlight">SPOTLIGHT
                   <small>Front and Center</small>
                   <button id="btn-blog-next" class="btn btn-inverse btn-mini" type="button">&raquo;</button>
                   <button id="btn-blog-prev" class="btn btn-inverse btn-mini" type="button">&laquo;</button>
@@ -208,7 +193,7 @@ $(document).ready(function () {
           ================================================== -->
           <div class="span6">
 
-              <h5 class="title-bg">On Repeat
+              <h5 class="title-bg" id="onRepeat">On Repeat
                   <small>for the love of music</small>
               </h5>
 
@@ -224,23 +209,15 @@ $(document).ready(function () {
               </div>
               </div>
 
-              <!-- Client Logo Thumbs-->
-              <ul class="client-logos">
-                  <li><a href="https://twitter.com/DjDahi" target="_blank" class="client-link"><img src="img/twitterlogo.png" alt="Client"></a></li>
-                  <li><a href="https://www.instagram.com/djdahi/" target="_blank" class="client-link"><img src="img/instagramlogo.png" alt="Client"></a></li>
-                  <li><a href="https://twitter.com/DjDahi" target="_blank" class="client-link"><img src="img/twitterlogo.png" alt="Client"></a></li>
-              </ul>
-
           </div>
 
       </div><!-- End Top Section -->
 
-    <div class="row gallery-row"><!-- Begin Gallery Row -->
+    <div class="row gallery-row"><!-- Begin Pressed Records Row -->
 
     	<div class="span12">
-            <h5 class="title-bg">Pressed Records
+            <h5 class="title-bg" id="pressedRecords">Pressed Records
                 <small>Artists & Collabs</small>
-                <button class="btn btn-mini btn-inverse hidden-phone" type="button">View Portfolio</button>
             </h5>
 
         <!-- Gallery Thumbnails
@@ -258,7 +235,7 @@ $(document).ready(function () {
                             </span>
                         </span>
                         <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
-                        <span class="project-details"><a href="gallery-single.htm">Custom Illustration</a>For an international ad campaign.</span>
+                        <span class="project-details"><a href="gallery-single.htm">Kendrick Lamar</a>DAMN.</span>
                     </li>
 
                     <!-- Gallery Item 2 -->
@@ -298,7 +275,7 @@ $(document).ready(function () {
                     </li>
 
 
-    </div><!-- End Gallery Row -->
+    </div><!-- End Pressed Records Row -->
 
 
     </div> <!-- End Container -->
@@ -306,23 +283,14 @@ $(document).ready(function () {
     <!-- Footer Area
         ================================================== -->
 
-	<div class="footer-container"><!-- Begin Footer -->
+	<div class="footer-container"><!-- Begin Social Media Posts -->
     	<div class="container">
         	<div class="row footer-row">
-                <div class="span3 footer-col">
-                    <h5>About Us</h5>
-                   <img src="img/piccolo-footer-logo.png" alt="Piccolo" /><br /><br />
-
-                    <ul class="social-icons">
-                        <li><a href="#" class="social-icon facebook"></a></li>
-                        <li><a href="#" class="social-icon twitter"></a></li>
-                        <li><a href="#" class="social-icon instagram"></a></li>
-                        <li><a href="#" class="social-icon rss"></a></li>
-                        <li><a href="#" class="social-icon forrst"></a></li>
-                    </ul>
-                </div>
-                <div class="span3 footer-col">
-                    <h5>Latest Tweets | @DjDahi</h5>
+                <div class="span6 footer-col">
+                  <a class="nav-social-media-button" id="twitter-follow-button"
+                    href="https://twitter.com/DjDahi" target="_blank" target="_blank">
+                    <h5 id="posts"><i class="fa fa-twitter social-media-icon-nav"aria-hidden="true"></i> Tweets | @DjDahi</h5>
+                  </a>
                     <ul>
                         <li><a href="#">@room122</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                         <li><a href="#">@room122</a> In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Morbi blandit ultricies ultrices.</li>
@@ -330,7 +298,10 @@ $(document).ready(function () {
                     </ul>
                 </div>
                 <div class="span6 footer-col">
-                    <h5>Instragram | @djdahi</h5>
+                  <a class="nav-social-media-button" id="instagram-follow-button"
+                    href="https://www.instagram.com/djdahi/" target="_blank">
+                    <h5><i class="fa fa-instagram social-media-icon-nav" aria-hidden="true"></i> Instragram | @djdahi</h5>
+                  </a>
                     <ul class="img-feed">
                         <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
                         <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
@@ -350,16 +321,16 @@ $(document).ready(function () {
 
 
 
-            <div class="row"><!-- Begin Sub Footer -->
+            <div class="row"><!-- Begin Footer -->
                 <div class="span12 footer-col footer-sub">
                     <div class="row no-margin">
-                        <div class="span12"><span class="center">&copy; DJ Dahi | Mateo</span></div>
+                        <div class="span12"><span class="center">&copy; DJ Dahi & Mateo</span></div>
                     </div>
                 </div>
-            </div><!-- End Sub Footer -->
+            </div><!-- End Footer -->
 
         </div>
-    </div><!-- End Footer -->
+    </div><!-- End Social Media Posts -->
 
     <!-- Scroll to Top -->
     <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
