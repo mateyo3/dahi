@@ -95,18 +95,10 @@ $(document).ready(function () {
             <ul class="nav">
               <li><a href="#top">Home</a></li>
               <li><a href="#spotlight">Spotlight</a></li>
-              <li><a href="#onRepeat">On Repeat</a></li>
+              <li><a href="#onRepeat">In The Queue</a></li>
               <li><a href="#pressedRecords">Pressed Records</a></li>
+              <li><a href="#action">Action</a></li>
               <li><a href="#posts">Posts</a></li>
-              <li>
-                <a class="nav-social-media-button" id="instagram-follow-button"
-                href="https://www.instagram.com/djdahi/" target="_blank">
-              <i class="fa fa-instagram social-media-icon-nav" aria-hidden="true"></i></a>
-            </li>
-              <li>
-                <a class="nav-social-media-button" id="twitter-follow-button"
-                href="https://twitter.com/DjDahi" target="_blank" target="_blank"><i class="fa fa-twitter social-media-icon-nav"aria-hidden="true"></i></a>
-              </li>
             </ul>
 
             </div>
@@ -118,8 +110,9 @@ $(document).ready(function () {
                 <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
                     <option value="">Navigate...</option>
                     <option value="#spotlight">Spotlight</option>
-                    <option value="#onRepeat">On Repeat</option>
+                    <option value="#onRepeat">In The Queue</option>
                     <option value="#pressedRecords">Pressed Records</option>
+                    <option value="#action">Action</option>
                     <option value="#posts">Posts</option>
                 </select>
                 </div>
@@ -193,8 +186,8 @@ $(document).ready(function () {
           ================================================== -->
           <div class="span6">
 
-              <h5 class="title-bg" id="onRepeat">On Repeat
-                  <small>for the love of music</small>
+              <h5 class="title-bg" id="onRepeat">In The Queue
+                  <small>On Repeat</small>
               </h5>
 
               <!-- Client Testimonial Slider-->
@@ -234,8 +227,8 @@ $(document).ready(function () {
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
-                        <span class="project-details"><a href="gallery-single.htm">Kendrick Lamar</a>DAMN.</span>
+                        <a href="gallery-single.htm"><img class="album-cover" src="https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2017/04/Kendrick-Lamar-DAMN-album-cover-featured-827x620.jpg?resize=220%2C180" alt="Gallery"></a>
+                        <span class="project-details"><a href="gallery-single.htm">Kendrick Lamar</a>DAMN. | Loyalty</span>
                     </li>
 
                     <!-- Gallery Item 2 -->
@@ -246,8 +239,8 @@ $(document).ready(function () {
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
-                        <span class="project-details"><a href="gallery-single.htm">3 Color Poster Design</a>For a regional festival event.</span>
+                        <a href="gallery-single.htm"><img class="album-cover" src="https://cdn.singersroom.com/wp-content/uploads/2016/01/tinasheunwrapsaquariusalbumcover2.jpg" alt="Gallery"></a>
+                        <span class="project-details"><a href="gallery-single.htm">Tinashe</a>Aquarius | Bet</span>
                     </li>
 
                     <!-- Gallery Item 3 -->
@@ -258,8 +251,8 @@ $(document).ready(function () {
                                 <a href="#" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
-                        <span class="project-details"><a href="gallery-single.htm">Ink Pen Illustration</a>Created for a best selling children's book.</span>
+                        <a href="gallery-single.htm"><img class="album-cover" src="https://images-na.ssl-images-amazon.com/images/I/71Bk7FnGznL._SY355_.jpg" alt="Gallery"></a>
+                        <span class="project-details"><a href="gallery-single.htm">Drake</a>Nothing Was The Same | Worst Behavior</span>
                     </li>
 
                     <!-- Gallery Item 4 -->
@@ -270,12 +263,46 @@ $(document).ready(function () {
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
-                        <span class="project-details"><a href="gallery-single.htm">Custom Illustration</a>For an international add campaign.</span>
+                        <a href="gallery-single.htm"><img class="album-cover" src="http://img.bbystatic.com/BestBuy_US/images/products/2990/29907296_sa.jpg" alt="Gallery"></a>
+                        <span class="project-details"><a href="gallery-single.htm">Vince Staples</a>Summertime '06 | Lift Me Up'</span>
                     </li>
 
 
     </div><!-- End Pressed Records Row -->
+
+
+    <div class="row"><!-- Begin Top Section -->
+
+      <!-- Blog Preview
+        ================================================== -->
+      <div class="span6">
+
+            <h5 class="title-bg" id="action">Action
+                <small>Live and Direct</small>
+                <button id="btn-blog-next" class="btn btn-inverse btn-mini" type="button">&raquo;</button>
+                <button id="btn-blog-prev" class="btn btn-inverse btn-mini" type="button">&laquo;</button>
+            </h5>
+
+        <div id="blogCarousel" class="carousel slide ">
+
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+
+                 <!-- Video Item 1 -->
+                <div class="active item">
+                  <iframe src="https://player.vimeo.com/video/109429071" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+
+                <!-- Video Item 2 -->
+                 <div class="item">
+                   <iframe src="https://www.youtube.com/embed/ofNy1gCW2-o?rel=0" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+
+            </div>
+            </div>
+        </div>
+
+    </div><!-- End Top Section -->
 
 
     </div> <!-- End Container -->
