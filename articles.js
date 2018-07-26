@@ -1,10 +1,10 @@
 var articles = [
   {
     site: "Rollingstone.com",
-    title: "DJ Dahi: Meet the Master Beatmaker for Drake, Dr. Dre, Kendrick Lamar (2015)",
+    title: "DJ Dahi: Meet the Master Beatmaker for Drake, Dr. Dre, Kendrick Lamar",
     articleURL: "https://www.rollingstone.com/music/news/dj-dahi-meet-the-master-beatmaker-for-drake-dr-dre-kendrick-lamar-20150923",
     imgURL: "https://img.wennermedia.com/article-leads-horizontal-800/rs-210636-IMG_3337.jpg",
-    date: "date",
+    date: "2015",
     author: "author",
     contentSample:"content",
     devNotes:"notes"
